@@ -1,0 +1,57 @@
+# React Coding Challenges
+
+This document provides a collection of React coding challenges to help you practice your skills and prepare for interviews.
+
+## Fundamental Challenges
+
+**1. Debouncing an API Call**
+
+* **Problem:** Create a search input component that fetches results from an API as the user types. However, to avoid overwhelming the API with requests, implement debouncing so that the API call is only made after the user has stopped typing for a certain period (e.g., 500 milliseconds).
+* **Key Concepts:** Debouncing, event handling, `useEffect` hook, `useState` hook, asynchronous operations (e.g., `fetch` or `axios`), potentially state management if the search results need to be shared with other components.
+
+**2. Implementing Infinite Scrolling**
+
+* **Problem:** Build a component that displays a list of items fetched from an API. As the user scrolls down the list, implement infinite scrolling to load more items from the API when they reach the bottom of the list.
+* **Key Concepts:** `useEffect` hook, event listeners (e.g., `onscroll`), state management, API calls, understanding of loading states (e.g., loading, error, success), potentially using a library like `react-infinite-scroll-component`.
+
+**3. Building a Drag-and-Drop Interface**
+
+* **Problem:** Create a list of items that can be reordered using drag and drop.
+* **Key Concepts:** HTML Drag and Drop API, event handling (e.g., `ondragstart`, `ondragover`, `ondrop`), state management to track the order of items, potentially using a library like `react-beautiful-dnd` or `react-dnd`.
+
+**4. Creating a Custom Hook for Form Handling**
+
+* **Problem:** Design a custom React hook that simplifies form handling logic. The hook should manage form input values, validation, and submission.
+* **Key Concepts:** Custom hooks, `useState` hook, form validation techniques, handling form submission, potentially using a library like `Formik` or `react-hook-form` for inspiration.
+
+**5. Building a Reusable Modal Component**
+
+* **Problem:** Create a modal component that can be reused throughout your application to display different content (e.g., alerts, forms, confirmation dialogs).
+* **Key Concepts:** Component composition, props, state management for controlling modal visibility, potentially using React's Context API or a state management library for global modal control.
+
+## Advanced Challenges
+
+**6. Building a Real-time Chat Application (Simplified)**
+
+* **Problem:** Create a basic chat application where users can send and receive messages in real time.
+* **Key Concepts:** WebSockets (or a library like `Socket.IO`), state management for handling messages, UI updates for new messages, potentially using a backend service like Firebase Realtime Database.
+
+**7. Implementing Undo/Redo Functionality**
+
+* **Problem:** Add undo and redo functionality to a simple drawing application or text editor built with React.
+* **Key Concepts:** State management, storing a history of actions, implementing logic for reversing actions, potentially using the Command pattern for a more structured approach.
+
+**8. Building a Game with React**
+
+* **Problem:** Create a simple game like Tic-Tac-Toe or a memory matching game using React.
+* **Key Concepts:** State management to track game state, event handling for user interactions, conditional rendering for game logic and UI updates, potentially using canvas or SVG for graphics.
+
+**9. Implementing Internationalization (i18n)**
+
+* **Problem:** Make your React application support multiple languages.
+* **Key Concepts:** Using internationalization libraries (e.g., `react-intl`, `i18next`), managing translations, handling locale changes, formatting dates and numbers according to locale.
+
+**10. Handling Race Conditions in Asynchronous Operations**
+
+* **Problem:** You have a component that makes multiple API calls concurrently. How would you handle potential race conditions where the responses arrive in an unexpected order, leading to inconsistent data or UI updates?
+* **Key Concepts:** Promises, async/await, `useEffect` cleanup function, state management for tracking loading and error states, understanding the potential for race conditions in asynchronous programming.
